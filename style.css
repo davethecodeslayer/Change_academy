@@ -39,6 +39,8 @@ nav li {
     flex-wrap: nowrap;
     float: right;
     margin: 0 0.6rem;
+    font-family: Verdana, sans-serif;
+    font-size: 0.6rem;
     
 
 }
@@ -61,11 +63,16 @@ main {
 .cathalog {
     display: grid;
     grid-area: 3 / 1 / 4 / 4;
+    /*display: flex*/
    
 }
 
 .services figure {
-    display: inline-grid
+    display: inline-grid;
+    /*display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    jutify-content: space-between;*/
   
 }
 
@@ -95,4 +102,9 @@ figure .photo {
 footer {
 display: grid;
 grid-area: footer;
+}
+
+/*headings*/
+h1, h2, h3, h4 {
+    font-family: 'Segoe UI', Verdana, sans-serif;
 }
