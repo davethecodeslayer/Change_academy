@@ -1,0 +1,98 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+   
+    
+} 
+
+body {
+ background-color: dimgray;
+ opacity: 0.9;
+ display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+ grid-template-rows:  100px 1fr 1fr 1fr 1fr 100px;
+ grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+ row-gap: 20px;
+ align-items: center;
+ justify-items: stretch;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /*justify-items: space-around;*/
+    grid-area: 1 / 1 / 2 / 4 ; 
+    height: 2rem;
+    width: 100%;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    float: right;
+    margin: 0 0.6rem;
+    
+
+}
+
+main {
+    grid-area: main; 
+}
+
+/*Mission section*/
+.mission {
+    display: grid;
+    grid-area: 2 / 1 / 3 / 4;
+    background-image: url("https://unsplash.com/photos/Sc5RKXLBjGg");
+    background-repeat: no-repeat;
+    background-position: 0 1rem;
+    background-size: cover;
+}
+
+/*Cathalog section*/ 
+.cathalog {
+    display: grid;
+    grid-area: 3 / 1 / 4 / 4;
+   
+}
+
+.services figure {
+    display: inline-grid
+  
+}
+
+.services img {
+    max-width: 20rem;
+    max-height: 32rem;
+    
+}
+/* Staff section*/
+.staff {
+    display: grid;
+    grid-area: 4 / 1 / 5 / 4;
+}
+
+figure .photo {
+    max-width: 12rem;
+    max-height: 20rem;
+}
+/* Contact section*/
+.contact { 
+    display: grid;
+    grid-area: 5 / 1 / 6 / 4;
+    width: auto;
+    height: 5rem;
+
+}
+footer {
+display: grid;
+grid-area: footer;
+}
